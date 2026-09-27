@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plataforma desarrollada para HackaTec 2026 en la categoría de Tecnologías Emergentes." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>HackaTec 2026 | Tecnologías Emergentes</title>
+
+  <!-- Preconexión de fuentes para optimizar velocidad -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos modular (con parámetro de versión para control de CDN) -->
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.0" />
+
+  <!-- Script principal con defer (carga sin frenar el renderizado de la página) -->
+  <script src="assets/js/main.js?v=1.0" defer></script>
+</head>
+<body>
+
+  <!-- Elementos decorativos de fondo (ignorados por lectores de pantalla por accesibilidad) -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <canvas id="network-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <header class="navbar">
+      <div class="brand">
+        <span aria-hidden="true">⚡</span> HACKATEC 2026 // CORE
+      </div>
+      <div class="status-pill" role="status">
+        <span class="pulse-dot"></span>
+        <span>PRODUCCIÓN ACTIVA • CDN READY</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <span class="badge-category">Categoría: Tecnologías Emergentes</span>
+          <h1>
+            Infraestructura Lista para <span class="gradient-text">Innovar en Tiempo Real.</span>
+          </h1>
+          <p>
+            Entorno de despliegue continuo bajo arquitectura modular y cabeceras de seguridad activas. Este nodo alojará el prototipo funcional del <strong>HackaTec 2026</strong>.
+          </p>
+          <div class="btn-group">
+            <a href="#arquitectura" class="btn btn-primary">Explorar Arquitectura</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+              Ver Repositorio GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="Consola de estado del servidor">
+          <div class="terminal-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">deploy@hackatec-2026:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-output"></div>
+        </aside>
+      </section>
+
+      <section id="arquitectura" class="grid-cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🧠</div>
+          <h2>Tecnologías Emergentes</h2>
+          <p>Arquitectura desacoplada lista para conectar APIs, modelos de procesamiento inteligente, IoT y automatización en tiempo real.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔒</div>
+          <h2>Seguridad por Diseño</h2>
+          <p>Protección activa mediante cabeceras HTTP, mitigación de XSS en el DOM, bloqueo de directorios y cifrado SSL/TLS forzado.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">⚡</div>
+          <h2>Ultra Baja Latencia</h2>
+          <p>Recursos estáticos minificados, compresión selectiva GZIP por tipo MIME y distribución por CDN con tiempos menores a 1 segundo.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Desarrollado para <strong>HackaTec 2026</strong> • Ingeniería en Sistemas Computacionales</p>
+    </footer>
+  </div>
+
+</body>
+</html>

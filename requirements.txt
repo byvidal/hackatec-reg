@@ -1,0 +1,35 @@
+
+# 1. CORE WEB & API REST (Backend Principal)
+Django>=5.0,<5.2
+djangorestframework>=3.15.0
+django-cors-headers>=4.3.0
+whitenoise>=6.6.0              # Para servir archivos estáticos rápido sin complicarse
+
+# (Alternativa ultraligera si deciden usar Flask o FastAPI en vez de Django)
+# Flask>=3.0.0
+# fastapi>=0.110.0
+# uvicorn>=0.29.0
+
+# 2. BASE DE DATOS (Optimizado para HostGator / cPanel)
+PyMySQL>=1.1.0                 # Conector MySQL puro en Python (no falla al instalar en cPanel)
+cryptography>=42.0.0           # Requerido para conexiones seguras MySQL/SSL
+
+# 3. SEGURIDAD Y VARIABLES DE ENTORNO
+python-dotenv>=1.0.1           # Carga segura de credenciales desde el archivo .env
+PyJWT>=2.8.0                   # Autenticación por tokens (si hacen login o app móvil)
+
+# 4. CONEXIÓN CON APIS, IOT, WEBHOOKS (WhatsApp / Telegram / n8n / Clima)
+requests>=2.31.0               # Peticiones HTTP clásicas a APIs externas o webhooks
+httpx>=0.27.0                  # Peticiones HTTP asíncronas de alta velocidad
+
+# Ciencia de Datos, Predicción y Sensores (Descomentar si usan modelos propios)
+# numpy>=1.26.0
+# pandas>=2.2.0
+# scikit-learn>=1.4.0
+# joblib>=1.4.0                # Para cargar modelos entrenados (.pkl / .joblib)
+
+# 6. EXTRAS SALVAVIDAS PARA DEMO DE HACKATÓN (Descomentar si se ocupan)
+# Pillow>=10.3.0               # Procesamiento y compresión de imágenes al vuelo
+# qrcode>=7.4.2                # Generar códigos QR dinámicos (a los jueces les encanta)
+# reportlab>=4.1.0             # Generar reportes PDF automáticos desde el sistema
+# paho-mqtt>=2.0.0             # Comunicación en tiempo real con sensores IoT (ESP32/Arduino)
